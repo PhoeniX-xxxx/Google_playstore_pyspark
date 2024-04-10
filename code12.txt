@@ -1,0 +1,3 @@
+%sql select App,sum(Installs) from apps
+group by 1
+order by 2 desc

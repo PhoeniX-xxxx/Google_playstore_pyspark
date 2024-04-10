@@ -1,0 +1,1 @@
+ df = spark.read.load('/FileStore/tables/googleplaystore-2.csv',format='csv',sep=',',header='true',escape='"',inferschema='true')

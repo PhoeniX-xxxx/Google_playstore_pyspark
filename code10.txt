@@ -1,0 +1,8 @@
+from pyspark.sql.functions import regexp_replace, col
+
+df=df.withColumn("Reviews", col("Reviews").cast(IntegerType()))\
+.withColumn("Installs", regexp_replace(col("Installs"),"[^0-9]",""))\
+.withColumn("Installs", col("Installs").cast(IntegerType()))\
+            .withColumn("Price", regexp_replace(col("Price"),"[$]",""))\
+             .withColumn("Price", col("Price").cast (IntegerType()))
+            

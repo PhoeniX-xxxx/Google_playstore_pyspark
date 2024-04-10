@@ -1,0 +1,1 @@
+df = df.drop("Size" , "Content rating" , "Last updated" , "Android Ver")

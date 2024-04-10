@@ -1,0 +1,4 @@
+%sql select App,sum(Price) from apps
+where Type = 'Paid'
+group by 1
+order by 2 desc
